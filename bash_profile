@@ -21,6 +21,7 @@ test -e /mnt/c/Users/Public/vhdresize.txt && rm /mnt/c/Users/Public/vhdresize.tx
 test -e /mnt/c/Users/Public/shutdown.cmd && rm /mnt/c/Users/Public/shutdown.cmd
 test -e ~/vhdresize.txt && rm ~/vhdresize.txt
 test -e ~/shutdown.cmd && rm ~/shutdown.cmd
+echo 'export BROWSER="wslview"' | tee -a /etc/skel/.bashrc >/dev/null 2>&1
 figlet -t -k -f /usr/share/figlet/mini.flf "Welcome to DebianSidWSL" | /usr/games/lolcat
 echo -e "\033[33;7mDo not interrupt or close the terminal window till script finishes execution!!!\n\033[0m"
 
